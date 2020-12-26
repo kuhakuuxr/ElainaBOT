@@ -199,7 +199,7 @@ module.exports = tobz = async (tobz, message) => {
 
         const serial = sender.id
         const isAdmin = adminNumber.includes(sender.id)
-        const ownerNumber = '6281311850715@c.us'
+        const ownerNumber = '6282387711916@c.us'
         const isOwner = ownerNumber.includes(sender.id)
 
         if (isGroupMsg && GroupLinkDetector && !isGroupAdmins && !isAdmin && !isOwner){
@@ -634,6 +634,7 @@ module.exports = tobz = async (tobz, message) => {
             break
         case prefix+'sticker':
         case prefix+'stiker':
+        case prefix+'s':
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (isMedia && type === 'image') {
@@ -729,7 +730,7 @@ module.exports = tobz = async (tobz, message) => {
                 tobz.reply(from, 'Maaf, Server sedang Error')
             }
             break
-        case prefix+'magernulis1': // BY MFARELS
+        case prefix+'nulis1': // BY MFARELS
                 if(isReg(obj)) return
                 if(cekumur(cekage)) return
             if (args.length === 1) return await tobz.reply(from, 'Kirim perintah *prefix+magernulis1 [teks]*', id)  // BY MFARELS
@@ -790,7 +791,7 @@ module.exports = tobz = async (tobz, message) => {
                 tobz.sendImage(from, './mager/magernulis√/magernulis1√.jpg', 'magernulis.jpg', '*Sukses Nulis DiBuku✓*\n\n*YouTube : MFarelS CH*\n*Instagram : @mfarelsyahtiawan*\n\n*© Powered By MFarelS | RajinNulis-BOT*', id)
             })
             break  // BY MFARELS
-        case prefix+'stickertoimg':
+        case prefix+'oimg':
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (quotedMsg && quotedMsg.type == 'sticker') {
@@ -1028,7 +1029,7 @@ Total Pengguna yang telah terdaftar ${pendaftar.length}`)
                                 tobz.reply(from, `${monospace(`Di database ngga ada nomer itu kak`)}`, id)
                         }
                 break
-        case prefix+'groupinfo' :
+        case prefix+'grupinfo' :
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', message.id)
@@ -1062,7 +1063,7 @@ Total Pengguna yang telah terdaftar ${pendaftar.length}`)
 *➸ Group Description* 
 ${desc}`)
             break
-        case prefix+'quoterandom' :
+        case prefix+'quotes' :
         case prefix+'quote' :
             if(isReg(obj)) return
             if(cekumur(cekage)) return
